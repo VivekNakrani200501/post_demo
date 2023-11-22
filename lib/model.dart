@@ -2,7 +2,7 @@
 //
 //     final postShowModel = postShowModelFromJson(jsonString);
 
-import 'package:meta/meta.dart';
+
 import 'dart:convert';
 
 PostShowModel postShowModelFromJson(String str) => PostShowModel.fromJson(json.decode(str));
