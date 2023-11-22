@@ -12,7 +12,8 @@ import '../model/listing_model.dart';
 
 class ListingController extends GetxController {
   Rx<File> picPath = File("").obs;
-
+  PageController pageController = PageController();
+  int selected = 0;
   Rx<PostListingModel?> myPostListModel = Rx<PostListingModel?>(null);
   final ApiProvider apiProvider = ApiProvider();
   int page = 1;
@@ -65,7 +66,7 @@ class ListingController extends GetxController {
     if (data[status] == true) {
       PostListingModel postListModel = PostListingModel.fromJson(data);
 
-      log('$postListModel');
+      log('postListModel  $postListModel');
 
       // if (page > 1) {
       //   postListModel.data.forEach((element) {
