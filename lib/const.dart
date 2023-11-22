@@ -19,5 +19,5 @@ String profilePictureKey = 'profile_picture';
 String postpageno='post_page_no' ;
 String limit ='post_page_item';
 String message ='message' ;
- int limitValKey = 10;
- String status = 'status';
+int limitValKey = 10;
+String status = 'status';
