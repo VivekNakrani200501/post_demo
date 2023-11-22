@@ -11,7 +11,7 @@ class _CreatePostState extends State<CreatePost> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      
+      body:Center()
     );
   }
 }
